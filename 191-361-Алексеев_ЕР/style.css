@@ -1,4 +1,6 @@
-.body-start, .registration{
+.body-start,
+.registration,
+.game {
     background-color: rgb(105, 196, 117);
     background-image: url(pictures/background.jpg);
     background-size: cover;
@@ -8,60 +10,112 @@
     align-items: center;
     color: white;
 }
-.body-start__header, .about{
+
+.body-start__header,
+.about {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.body-start-page__logo{
+
+.body-start-page__logo {
     text-align: center;
 }
-.body-start-page__logo__image{
+
+.body-start-page__logo__image {
     width: 50%;
     transition: 2s linear;
 }
-.body-start-page__logo__image:hover{
+
+.body-start-page__logo__image:hover {
     transform: rotate(-10deg);
     width: 45%;
 }
-.body-start__header__title{
+
+.body-start__header__title {
     font-size: 54px;
     transition: all 2s ease;
     animation: jump 1s linear infinite;
 }
-.body-start__header__made-by{
+
+.body-start__header__made-by {
     margin-bottom: 1%;
     margin-top: 1%;
 }
-.body-start__form__button, .body-start__reg__button, .registration__back__button, .fields__button{
+
+.body-start__form__button,
+.body-start__reg__button,
+.registration__back__button,
+.fields__button {
     background-color: orange;
     color: black;
     font-size: 24px;
 }
-.fields{
+
+.fields {
     border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.fields__item{
+
+.fields__item {
     font-size: 24px;
 }
-.fields__item_url{
+
+.fields__item_url {
     color: white;
 }
-.about__text__item{
+
+.about__text__item {
     text-indent: 2%;
     text-align: center;
 }
-.about__text__item::selection{
+
+.about__text__item::selection {
     color: orange;
     background-color: black;
 }
-.about__picture{
+
+.about__picture {
     margin-top: 5%;
     width: 80%;
     border: orange 3px solid;
+}
+
+.game__main-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game__main-menu__item {
+    margin-right: 2%;
+    background-color: orange;
+    padding: 1%;
+    color: black;
+    font-size: 32px;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    width: 18vw;
+}
+
+.game__main-menu__item:hover {
+    transform: scaleX(0.9);
+    transform: scaleY(0.95);
+}
+
+.game__main-menu__item:active {
+    transform: translateY(10px);
+}
+
+.game__main-menu__item__url-button {
+    text-decoration: none;
+    color: black;
 }
 
 @keyframes jump {
