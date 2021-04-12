@@ -1,4 +1,4 @@
-.body-start{
+.body-start, .registration{
     background-color: rgb(105, 196, 117);
     background-image: url(pictures/background.jpg);
     background-size: cover;
@@ -28,6 +28,27 @@
     font-size: 54px;
     transition: all 2s ease;
     animation: jump 1s linear infinite;
+}
+.body-start__header__made-by{
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.body-start__form__button, .body-start__reg__button, .registration__back__button, .fields__button{
+    background-color: orange;
+    color: black;
+    font-size: 24px;
+}
+.fields{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fields__item{
+    font-size: 24px;
+}
+.fields__item_url{
+    color: white;
 }
 .about__text__item{
     text-indent: 2%;
